@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/eugrro/teamtextWeb/issues"
   },
-  "homepage": "https://github.com/eugrro/teamtextWeb#readme"
+  "homepage": "https://github.com/eugrro/teamtextWeb#readme",
+  "dependencies": {
+    "@greenlock/manager": "^3.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "greenlock": "^4.0.4",
+    "greenlock-express": "^4.0.3"
+  }
 }
