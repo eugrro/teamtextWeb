@@ -26,17 +26,19 @@ const keys = require("./keys.js")
         console.log("Connected to MongoDB database");
     }
 });*/
+var testingLocally = false;
 
-var app = require("./server.js");
-var port = 3000;
-var ip = "192.168.1.150";
+if (testingLocally == true) {
+    var port = 3000;
+    var ip = "192.168.1.150";
 
-
-app.get("/", async function (req, res) {
-    res.send("<h3>Server is up and Running</h3>");
-});
-app.listen(port, function (err) {
-    if (err) console.log(err);
-    console.log("Listening on " + ip + ":" + port);
-});
-
+    app.listen(port, function (err) {
+        if (err) console.log(err);
+        console.log("Listening on " + ip + ":" + port);
+    });
+    app.get("/", async function (req, res) {
+        res.send("<h3>Server is up and Running</h3>");
+    });
+} else {
+    var app = require("./server.js");
+}
