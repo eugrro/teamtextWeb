@@ -28,7 +28,8 @@ const keys = require("./keys.js")
 });*/
 
 var app = require("./server.js");
-var port = 3000;
+
+/*var port = 3000;
 var ip = "192.168.1.150";
 
 
@@ -40,3 +41,4 @@ app.listen(port, function (err) {
     console.log("Listening on " + ip + ":" + port);
 });
 
+*/

@@ -11,7 +11,8 @@
     "renewOffset": "-45d",
     "renewStagger": "3d",
     "accountKeyType": "EC-P256",
-    "serverKeyType": "RSA-2048"
+    "serverKeyType": "RSA-2048",
+    "subscriberEmail": "eugene.rozental@gmail.com"
   },
   "sites": [
     {
@@ -19,7 +20,7 @@
       "altnames": [
         "teamtext.app"
       ],
-      "renewAt": 1
+      "renewAt": 1637211647594
     }
   ]
 }
