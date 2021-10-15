@@ -12,7 +12,6 @@ var bodyParser = require('body-parser');
 app.use(express.json({ extended: false }));
 var fs = require('fs');
 const path = require("path");
-
 // Load the AWS SDK for Node.js
 //var AWS = require('aws-sdk');
 
