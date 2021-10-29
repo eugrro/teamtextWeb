@@ -33,7 +33,7 @@ MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true }, (e
         db = _db.db("db");
     }
     else
-        console.log("Error in the connectivity");
+        console.log("Unable to connect to MongoDB");
 })
 var testingLocally = true;
 
@@ -52,10 +52,10 @@ if (testingLocally) {
     var app = require("./server.js");
 }
 
-app.use(express.static(__dirname + './../web/'));
+app.use(express.static(__dirname + '/'));
+
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
-app.set('views', __dirname + './../web/');
 app.get("/join/:teamID", async function (req, res) {
     res.render('joinTeam.html', { teamID: req.params.teamID });
 });

@@ -1,3 +1,0 @@
-<label class='inline-block-child' for="fname">First Name</label> <input class='inline-block-child'
-                    type="text" id="fname" name="firstname" placeholder="Your name..">
-<input type="submit" value="Submit">
